@@ -194,6 +194,7 @@ var gear = {
       },
       "phase": 7,
       "q": 3,
+      "i": 78,
       "id": 55522
     },
     {
@@ -209,6 +210,7 @@ var gear = {
       },
       "phase": 7,
       "q": 3,
+      "i": 78,
       "id": 55530
     },
     {
@@ -1282,6 +1284,7 @@ var gear = {
       },
       "phase": 7,
       "q": 3,
+      "i": 78,
       "id": 55523
     },
     {
@@ -1297,7 +1300,36 @@ var gear = {
       },
       "phase": 7,
       "q": 3,
+      "i": 78,
       "id": 55531
+    },
+    {
+      "name": "Black Brood Pauldrons",
+      "str": 14,
+      "agi": 17,
+      "sta": 12,
+      "type": "2H Sword",
+      "skill": 7,
+      "source": "BWL",
+      "ac": 357,
+      "phase": 2,
+      "id": 19373,
+      "i": 75,
+      "q": 4
+    },
+    {
+      "name": "Taut Dragonhide Shoulderpads",
+      "ap": 46,
+      "sta": 28,
+      "agi": 15,
+      "type": "1H Mace",
+      "skill": 5,
+      "source": "BWL",
+      "ac": 170,
+      "phase": 2,
+      "id": 19389,
+      "i": 77,
+      "q": 4
     },
     {
       "name": "Rune-Etched Mantle",
@@ -2422,6 +2454,7 @@ var gear = {
       },
       "phase": 7,
       "q": 3,
+      "i": 78,
       "id": 55524
     },
     {
@@ -2437,6 +2470,7 @@ var gear = {
       },
       "phase": 7,
       "q": 3,
+      "i": 78,
       "id": 55532
     },
     {
@@ -3791,6 +3825,7 @@ var gear = {
       "phase": 7,
       "source": "AQ40",
       "q": 4,
+      "i": 81,
       "id": 55553
     },
     {
@@ -3809,6 +3844,7 @@ var gear = {
       "phase": 7,
       "source": "AQ40",
       "q": 4,
+      "i": 81,
       "id": 55554
     },
 	{
@@ -3893,6 +3929,20 @@ var gear = {
       "q": 4,
       "i": 78,
       "id": 61213
+    },
+    {
+      "name": "Toughened Silithid Hide Gloves",
+      "source": "AQ20",
+      "sta": 18,
+      "agi": 15,
+      "str": 11,
+      "type": "1H Sword",
+      "skill": 5,
+      "ac": 182,
+      "phase": 7,
+      "q": 3,
+      "i": 71,
+      "id": 21501,
     },
     {
       "name": "Stormshroud Gloves",
@@ -4257,7 +4307,7 @@ var gear = {
       "crit": 1,
       "sta": 6,
       "ap": 54,
-      "ac": 488,
+      "ac": 488, //lowered, not sure to what
       "skill": 7,
       "type": "2H Axe",
       "source": "MC",
@@ -5091,11 +5141,13 @@ var gear = {
       "name": "Ossirian's Binding",
       "crit": 1,
       "hit": 1,
-      "sta": 19,
-      "agi": 20,
+      "sta": 16,
+      "agi": 16,
       "ac": 258,
       "source": "AQ20",
       "phase": 5,
+      "skill": 6,
+      "type": "Polearm",
       "q": 4,
       "i": 72,
       "id": 21463
@@ -5254,6 +5306,7 @@ var gear = {
       },
       "phase": 7,
       "q": 3,
+      "i": 78,
       "id": 55525
     },
     {
@@ -5268,6 +5321,7 @@ var gear = {
       },
       "phase": 7,
       "q": 3,
+      "i": 78,
       "id": 55533
     },
     {
@@ -5277,7 +5331,8 @@ var gear = {
       "resist": {
         "nature": 28,
       },
-      "ap": 40,
+      "agi": 27,
+      "crit": 1,
       "skill": 5,
       "type": "Polearm",
       "source": "AQ40",
@@ -5521,7 +5576,7 @@ var gear = {
       "agi": 26,
       "str": 9,
       "skill": 8,
-      "type": "Mace",
+      "type": "2H Mace",
       "crit": 1,
       "ac": 408,
       "source": "EmerSanc",
@@ -5993,8 +6048,8 @@ var gear = {
     },
     {
       "name": "Leysteel Legplates",
-      "str": 37,
-      "sta": 32,
+      "str": 32,
+      "sta": 37,
       "ac": 861,
       "source": "UpperKara",
       "phase": 7,
@@ -8858,6 +8913,19 @@ var gear = {
       "q": 4,
       "i": 78,
       "id": 61448
+    },
+    {
+      "name": "Mallet of the Awakening",
+      "mindmg": 76,
+      "maxdmg": 140,
+      "speed": 1.8,
+      "sta": 11,
+      "type": "Mace",
+      "source": "EmerSanc",
+      "phase": 7,
+      "q": 4,
+      "i": 78,
+      "id": 61237
     },
     {
       "name": "Crystal Sword of the Blossom",
