@@ -787,8 +787,8 @@ SIM.UI = {
         view.sidebar.find('#hit').html((player.stats.hit || 0) + '%');
         view.sidebar.find('#miss').html(Math.max(player.mh.miss, 0).toFixed(2) + '% <small>' + (player.oh ? 'Abilities' : 'MH' ) + '</small>' + (player.oh ? space + Math.max(player.mh.dwmiss, 0).toFixed(2) + '% <small>Autos</small>' : ''));
         view.sidebar.find('#dodge').html(player.mh.dodge.toFixed(2) + '% <small>MH</small>' + (player.oh ? space + player.oh.dodge.toFixed(2) + '% <small>OH</small>' : ''));
-        let mhcrit = player.crit + player.mh.crit;
-        let ohcrit = player.crit + (player.oh ? player.oh.crit : 0);
+        let mhcrit = player.mh.effectivecrit;
+        let ohcrit = (player.oh ? player.oh.effectivecrit : 0);
         view.sidebar.find('#crit').html(mhcrit.toFixed(2) + '% <small>MH</small>' + (player.oh ? space + ohcrit.toFixed(2) + '% <small>OH</small>' : ''));
         let mhcap = Math.max(0, 100 - player.mh.dwmiss - player.mh.dodge - player.mh.glanceChance);
         let ohcap = Math.max(0, player.oh ? 100 - player.oh.dwmiss - player.oh.dodge - player.oh.glanceChance : 0);
