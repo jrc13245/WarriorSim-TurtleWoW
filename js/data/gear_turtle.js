@@ -6,6 +6,9 @@ var gear = {
       "agi": 14,
       "sta": 16,
       "ac": 608,
+      "resist": {
+        "fire": 10
+      },
       "phase": 7,
       "source": "MC",
       "q": 4,
@@ -18,6 +21,10 @@ var gear = {
       "sta": 23,
       "ac": 696,
       "crit": 1,
+      "resist": {
+        "fire": 10,
+        "shadow": 10
+      },
       "phase": 7,
       "source": "BWL",
       "q": 4,
@@ -660,6 +667,9 @@ var gear = {
       "dodge": 1,
       "defense": 7,
       "ac": 608,
+      "resist": {
+        "fire": 10
+      },
       "source": "MC",
       "phase": 1,
       "q": 4,
@@ -1215,6 +1225,9 @@ var gear = {
       "ap": 38,
       "crit": 1,
       "ac": 562,
+      "resist": {
+        "shadow": 7
+      },
       "phase": 7,
       "source": "MC",
       "q": 4,
@@ -1229,6 +1242,9 @@ var gear = {
       "arp": 25,
       "ac": 642,
       "phase": 7,
+      "resist": {
+        "fire": 10
+      },
       "source": "BWL",
       "q": 4,
       "i": 76,
@@ -1704,6 +1720,9 @@ var gear = {
       "sta": 22,
       "defense": 5,
       "ac": 562,
+      "resist": {
+        "shadow": 7
+      },
       "source": "MC",
       "phase": 1,
       "q": 4,
@@ -1729,6 +1748,9 @@ var gear = {
       "sta": 27,
       "defense": 7,
       "ac": 642,
+      "resist": {
+        "fire": 10
+      },
       "source": "BWL",
       "phase": 3,
       "q": 4,
@@ -2384,6 +2406,9 @@ var gear = {
       "sta": 18,
       "hit": 1,
       "ac": 749,
+      "resist": {
+        "fire": 10
+      },
       "phase": 7,
       "source": "MC",
       "q": 4,
@@ -2396,6 +2421,10 @@ var gear = {
       "sta": 19,
       "ac": 857,
       "crit": 2,
+      "resist": {
+        "fire": 10,
+        "nature": 10
+      },
       "phase": 7,
       "source": "BWL",
       "q": 4,
@@ -2943,6 +2972,9 @@ var gear = {
       "sta": 28,
       "defense": 7,
       "ac": 749,
+      "resist": {
+        "fire": 10
+      },
       "source": "MC",
       "phase": 1,
       "q": 4,
@@ -2994,6 +3026,10 @@ var gear = {
       "sta": 40,
       "defense": 11,
       "ac": 857,
+      "resist": {
+        "fire": 10,
+        "nature": 10
+      },
       "source": "BWL",
       "phase": 3,
       "q": 4,
@@ -3759,11 +3795,14 @@ var gear = {
   ],
   "hands": [
     {
-      "name": "Gauntlets of Might",
-      "str": 19,
+      "name": "Gloves of Might",
+      "str": 18,
       "sta": 13,
-      "crit": 1,
+      "agi": 12,
       "hit": 1,
+      "resist": {
+        "fire": 7
+      },
       "ac": 468,
       "phase": 7,
       "source": "MC",
@@ -3773,11 +3812,14 @@ var gear = {
     },
     {
       "name": "Gloves of Wrath",
-      "str": 21,
-      "agi": 12,
+      "str": 20,
+      "sta": 16,
       "hit": 1,
       "crit": 1,
       "ac": 535,
+      "resist": {
+        "shadow": 10
+      },
       "phase": 7,
       "source": "BWL",
       "q": 4,
@@ -4347,6 +4389,9 @@ var gear = {
       "str": 22,
       "sta": 17,
       "defense": 5,
+      "resist": {
+        "fire": 7
+      },
       "ac": 468,
       "source": "MC",
       "phase": 1,
@@ -4405,10 +4450,13 @@ var gear = {
     },
     {
       "name": "Gauntlets of Wrath",
-      "str": 15,
+      "str": 17,
       "sta": 20,
       "parry": 1,
       "defense": 7,
+      "resist": {
+        "shadow": 10
+      },
       "ac": 535,
       "source": "BWL",
       "phase": 3,
@@ -4532,6 +4580,9 @@ var gear = {
       "hit": 1,
       "ac": 421,
       "phase": 7,
+      "resist": {
+        "fire": 7
+      },
       "source": "MC",
       "q": 4,
       "i": 66,
@@ -4544,6 +4595,9 @@ var gear = {
       "crit": 1,
       "ac": 482,
       "phase": 7,
+      "resist": {
+        "shadow": 10
+      },
       "source": "BWL",
       "q": 4,
       "i": 76,
@@ -5209,6 +5263,9 @@ var gear = {
       "sta": 20,
       "defense": 7,
       "ac": 482,
+      "resist": {
+        "shadow": 10
+      },
       "source": "BWL",
       "phase": 3,
       "q": 4,
@@ -5235,6 +5292,9 @@ var gear = {
       "ap": 52,
       "ac": 655,
       "phase": 7,
+      "resist": {
+        "shadow": 10
+      },
       "source": "MC",
       "q": 4,
       "i": 66,
@@ -5247,6 +5307,10 @@ var gear = {
       "hit": 2,
       "ap": 50,
       "ac": 749,
+      "resist": {
+        "fire": 10,
+        "arcane": 10
+      },
       "phase": 7,
       "source": "BWL",
       "q": 4,
@@ -5927,6 +5991,9 @@ var gear = {
       "parry": 1,
       "defense": 7,
       "ac": 655,
+      "resist": {
+        "shadow": 10
+      },
       "source": "MC",
       "phase": 1,
       "q": 4,
@@ -5966,6 +6033,10 @@ var gear = {
       "dodge": 2,
       "defense": 11,
       "ac": 749,
+      "resist": {
+        "fire": 10,
+        "arcane": 10
+      },
       "source": "MC",
       "phase": 1,
       "q": 4,
@@ -6066,6 +6137,9 @@ var gear = {
       "hit": 1,
       "ac": 515,
       "phase": 7,
+      "resist": {
+        "shadow": 7
+      },
       "source": "MC",
       "q": 4,
       "i": 66,
@@ -6079,6 +6153,9 @@ var gear = {
       "arp": 25,
       "ac": 589,
       "phase": 7,
+      "resist": {
+        "fire": 10
+      },
       "source": "BWL",
       "q": 4,
       "i": 76,
@@ -6638,6 +6715,9 @@ var gear = {
       "sta": 26,
       "defense": 5,
       "ac": 515,
+      "resist": {
+        "shadow": 7
+      },
       "source": "MC",
       "phase": 1,
       "q": 4,
@@ -6650,6 +6730,9 @@ var gear = {
       "sta": 30,
       "defense": 7,
       "ac": 589,
+      "resist": {
+        "fire": 10
+      },
       "source": "BWL",
       "phase": 3,
       "q": 4,
