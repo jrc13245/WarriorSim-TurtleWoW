@@ -828,6 +828,7 @@ class Player {
         this.mh.miss = this.getMissChance(this.mh);
         this.mh.dwmiss = this.mh.miss;
         this.mh.dodge = this.getDodgeChance(this.mh);
+        this.mh.effectivecrit = this.getEffectiveCrit(this.mh);
 
         if (this.oh) {
             this.mh.dwmiss = this.getDWMissChance(this.mh);
@@ -838,6 +839,7 @@ class Player {
                 this.oh.dwmiss -= this.talents.offhit
             }
             this.oh.dodge = this.getDodgeChance(this.oh);
+            this.oh.effectivecrit = this.getEffectiveCrit(this.oh);
         }
     }
     updateAuras() {
@@ -1107,6 +1109,9 @@ class Player {
         // https://github.com/vmangos/core/blob/development/src/game/Objects/Unit.cpp#L2755
         // if ((this.target.level - this.level)  >= 3) crit -= 1.8;
         return Math.max(crit, 0);
+    }
+    getEffectiveCrit(weapon) {
+   	    return Math.max(0, (this.crit + weapon.crit) + ((this.stats['skill_' + weapon.type] - this.target.defense) * 0.04) + (this.basestance === 'zerk' ? 3 : 0));         
     }
     getDodgeChance(weapon) {
         return Math.max(5 - this.stats.expertise - this.target.dodge + (this.target.defense - this.stats['skill_' + weapon.type]) * 0.1, 0);
