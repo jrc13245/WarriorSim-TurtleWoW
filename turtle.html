@@ -40,7 +40,7 @@
 
 <!--
 TO ADD:
--correct set bonus and upperkara gear ID's when database up
+-correct set bonus ID's when database updated
 -T2 DPS 3p - 15% haste for 5 sec after overpower
 -T2 DPS 8p - WW hits 2 extra targets
 -T3 DPS 8p bonus - increase dmg of next melee attack by 30 after crit
@@ -50,8 +50,6 @@ TO ADD:
 -sweeping strikes (upstream needs too)
 
 TO FIX:
--Berserker stance 3% crit aura not showing, maybe working on back end? (upstream needs too)
--Bonechopper proc'ing more than 30ppm, maybe small .01s cd?
 -Weapon with procs cause sunder/hms/pummel to trigger WF and double procs very often
 
 
@@ -59,7 +57,6 @@ TO EXPLORE:
 -Haste may be overvalued in some cases
 -Hit may be overvalued in some cases
 -Default min reaction time used a lot when 200ms is a long time between chained non gcd spells
--Rage formula needs refining. Decent for lvl 60's, but doesnt give enough rage as you get lower level
 -->
 </head>
 <body>
@@ -86,7 +83,7 @@ TO EXPLORE:
 <br/>
 <br/>To Do: (I am accepting PRs)
 <br/>-dps t2 (3p&8p), t3 (8p), & t3.5 (5 set) set bonuses
-<br/>-sunder as proc fisher
+<br/>-k40 weapon procs
 <br/>-slam rework
 <br/>-sweeping strikes (upstream needs this too)
 <br/>-prot talents but who cares?
@@ -187,9 +184,9 @@ TO EXPLORE:
       <a href="#" class="btn js-stats disabled">FIGHT STATISTICS</a>
       <a href="#" class="btn js-settings">FIGHT SETTINGS</a>
       <a href="#" class="btn js-profiles">PROFILES</a>
-      <div class="author">made by Guybrush-Golemagg<br>This TurtleWoW fork maintained by Zaas<br>Based Contributors: Thrunk, Hobbit, Melba</div>
+      <div class="author">made by Guybrush-Golemagg<br>TurtleWoW version created by Zaas<br>This TurtleWoW fork maintained by Thrunk<br>Based Contributors: Hobbit, Melba</div>
       <div class="manual"><a href="https://docs.google.com/document/d/1-ugglMDHqIQlEDiE2z9G7zuI-kgyvb2kvgPobWbcxy0/edit" target="_blank">User Manual</a></div>
-      <div class="manual"><a href="https://github.com/Zebouski/WarriorSim-TurtleWoW/" target="_blank">Github</a></div>
+      <div class="manual"><a href="https://github.com/Thrunk112/WarriorSim-TurtleWoW/" target="_blank">Github</a></div>
     </div>
   </section>
 
