@@ -1369,7 +1369,8 @@ class MightyRagePotion extends Aura {
         if (step >= this.timer) {
             this.uptime += (this.timer - this.starttimer);
             this.timer = 0;
-            this.firstuse = false;
+            this.usestep = this.starttimer + (this.cooldown * 1000);
+            //this.firstuse = false;
             this.player.updateStrength();
             /* start-log */ if (this.player.logging) this.player.log(`${this.name} removed`); /* end-log */
         }
@@ -1396,7 +1397,7 @@ class QuicknessPotion extends Aura {
         if (step >= this.timer) {
             this.uptime += (this.timer - this.starttimer);
             this.timer = 0;
-            this.firstuse = false;
+            this.usestep = this.starttimer + (this.cooldown * 1000);
             this.player.updateHaste();
             /* start-log */ if (this.player.logging) this.player.log(`${this.name} removed`); /* end-log */
         }
@@ -1407,7 +1408,7 @@ class Bloodlust extends Aura {
     constructor(player, id) {
         super(player, id, 'Bloodlust');
         this.mult_stats = { haste: this.value1 };
-        this.duration = 20;
+        this.duration = 6;
     }
     use() {
         this.timer = step + this.duration * 1000;
@@ -1417,6 +1418,34 @@ class Bloodlust extends Aura {
     }
     canUse() {
         return this.firstuse && !this.timer && step >= this.usestep;
+    }
+}
+
+class Chastise extends Aura {
+    constructor(player, id) {
+        super(player, id, 'Chastise');
+        this.mult_stats = { haste: 20 };
+        this.duration = 8;
+        this.cooldown = 40;
+    }
+    use(a, prepull = 0) {
+        if (this.timer) this.uptime += (step - this.starttimer);
+        this.timer = step + this.duration * 1000 - prepull;
+        this.starttimer = step - prepull;
+        this.player.updateHaste();
+        /* start-log */ if (this.player.logging) this.player.log(`${this.name} applied`); /* end-log */
+    }
+    canUse() {
+        return !this.timer && step >= this.usestep;
+    }
+    step() {
+        if (step >= this.timer) {
+            this.uptime += (this.timer - this.starttimer);
+            this.timer = 0;
+            this.usestep = this.starttimer + (this.cooldown * 1000);
+            this.player.updateHaste();
+            /* start-log */ if (this.player.logging) this.player.log(`${this.name} removed`); /* end-log */
+        }
     }
 }
 

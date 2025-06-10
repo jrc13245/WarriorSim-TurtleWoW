@@ -979,6 +979,8 @@ class Player {
             this.stats.haste *= (1 + this.auras.magmadarsreturn.mult_stats.haste / 100);
         if (this.auras.jujuflurry && this.auras.jujuflurry.timer)
             this.stats.haste *= (1 + this.auras.jujuflurry.mult_stats.haste / 100);
+        if (this.auras.chastise && this.auras.chastise.timer)
+            this.stats.haste *= (1 + this.auras.chastise.mult_stats.haste / 100);
         if (this.auras.crusaderzeal && this.auras.crusaderzeal.timer)
             this.stats.haste *= (1 + this.auras.crusaderzeal.mult_stats.haste / 100);
         if (this.auras.obsidianhaste && this.auras.obsidianhaste.timer)
@@ -1322,6 +1324,7 @@ class Player {
         if (this.auras.wrathwray && this.auras.wrathwray.timer) this.auras.wrathwray.step();
         if (this.auras.moonstalkerfury && this.auras.moonstalkerfury.timer) this.auras.moonstalkerfury.step();
         if (this.auras.jujuflurry && this.auras.jujuflurry.timer) this.auras.jujuflurry.step();
+        if (this.auras.chastise && this.auras.chastise.timer) this.auras.chastise.step();
         if (this.auras.grilekguard && this.auras.grilekguard.timer) this.auras.grilekguard.step();
         if (this.auras.obsidianhaste && this.auras.obsidianhaste.timer) this.auras.obsidianhaste.step();
         if (this.auras.obsidianstrength && this.auras.obsidianstrength.timer) this.auras.obsidianstrength.step();
@@ -1401,6 +1404,7 @@ class Player {
         if (this.auras.demontaintedblood && this.auras.demontaintedblood.timer) this.auras.demontaintedblood.end();
         if (this.auras.wrathwray && this.auras.wrathwray.timer) this.auras.wrathwray.end();
         if (this.auras.jujuflurry && this.auras.jujuflurry.timer) this.auras.jujuflurry.end();
+        if (this.auras.chastise && this.auras.chastise.timer) this.auras.chastise.end();
         if (this.auras.grilekguard && this.auras.grilekguard.timer) this.auras.grilekguard.end();
         if (this.auras.obsidianhaste && this.auras.obsidianhaste.timer) this.auras.obsidianhaste.end();
         if (this.auras.obsidianstrength && this.auras.obsidianstrength.timer) this.auras.obsidianstrength.end();
