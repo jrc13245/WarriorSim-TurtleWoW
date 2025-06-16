@@ -1110,7 +1110,7 @@ var spells = [
     name: 'Bloodlust',
     classname: 'Bloodlust',
     iconname: 'spell_nature_bloodlust',
-    timetoend: 20,
+    timetoend: 30,
     timetoendactive: false,
     timetostart: 0,
     timetostartactive: false,

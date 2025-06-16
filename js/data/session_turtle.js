@@ -11,7 +11,7 @@ var session = {
    "targetresistance": "24",
    "adjacent": "0",
    "adjacentlevel": "60",
-   "aqbooks": "No",
+   "aqbooks": "Yes",
    "weaponrng": "Yes",
    "spelldamage": "0",
    "batching": "10",
@@ -27,7 +27,10 @@ var session = {
        "10442",
        "13452",
        "12451",
-       "12820"
+       "12820",
+       "9907",
+       "11717",
+       "11597"
    ],
    "rotation": [
        {
@@ -223,7 +226,7 @@ var session = {
            "maxrageactive": false,
            "maincd": 2,
            "maincdactive": false,
-           "active": true
+           "active": false
        },
        {
            "id": 1715,
@@ -280,7 +283,7 @@ var session = {
        {
            "id": 18499,
            "name": "Berserker Rage",
-           "active": true,
+           "active": false,
            "buff": true,
            "flagellation": true,
            "consumedrage": true
@@ -353,7 +356,7 @@ var session = {
            "id": "26296",
            "name": "Berserking",
            "timetoend": 11,
-           "haste": "30",
+           "haste": "15",
            "aura": true,
            "active": false,
            "buff": true,
@@ -368,6 +371,13 @@ var session = {
            "buff": true,
            "time": "35"
        },
+        {
+           "id": 25289,
+           "name": "Battle Shout",
+           "active": true,
+           "buff": true,
+           "aura": true
+       },
    ],
    "sources": [
        "quest",
@@ -380,6 +390,7 @@ var session = {
        "aq20",
        "aq40",
        "naxx",
+       "upperkara",
        "emersanc",
        "lowerkara",
        "worldboss",
@@ -399,46 +410,46 @@ var session = {
        {
            "n": "Arms",
            "t": [
-               3,
-               0,
-               3,
-               0,
-               5,
-               0,
-               0,
-               1,
-               3,
-               0,
-               2,
-               0,
-               0,
-               0,
-               0,
-               0,
-               0,
-               0
+               3, //Improved Heroic Strike
+               0, //deflection
+               2, //imp rend
+               0, //imp charge
+               5, //tactical mastery
+               0, //TC
+               2, //OP
+               0, //Counterattack
+               3, //deep wounds
+               0, //2hand spec
+               2, //impale
+               0, //master of arms
+               0, //sweeping strikes
+               0, //precision cut
+               0, //imp slam
+               0, //imp disc
+               0, //boundless
+               0 //ms
            ]
        },
        {
            "n": "Fury",
            "t": [
-               0,
-               5,
-               0,
-               5,
-               0,
-               0,
-               0,
-               5,
-               5,
-               2,
-               5,
-               0,
-               1,
-               0,
-               0,
-               5,
-               1
+               0, //booming voice
+               5, //cruelty
+               0, //demo shout
+               0, //unbridled
+               0, //imp pummel
+               0, //piercing howl
+               3, //bloodcraze
+               5, //imp shout
+               5, //dw spec
+               2, //imp execute
+               5, //enrage
+               2, //imp whirlwind
+               1, //dw
+               0, //imp intercept
+               0, //blooddrinker
+               5, //flurry
+               1 // BT
            ]
        },
        {
@@ -585,7 +596,7 @@ var session = {
        ],
        "hands": [
            {
-               "id": 20013,
+               "id": 25080,
                "selected": true,
            }
        ],

@@ -37,8 +37,16 @@ SIM.SETTINGS = {
         view.buffs.on('click', '.icon', function (e) {
             let obj = $(this).toggleClass('active');
             if (obj.hasClass('active')) {
-                if (obj.data('group'))
-                    obj.siblings().filter('[data-group="' + obj.data('group') + '"]').removeClass('active');
+                if (obj.data('group')) {
+                    let groups = String(obj.data('group')).split(',');
+                    for (let group of groups) {
+                        obj.siblings().filter(function () {
+                            let siblingGroups = $(this).data('group');
+                            if (!siblingGroups) return false;
+                            return String(siblingGroups).split(',').includes(group);
+                        }).removeClass('active');
+                    }
+                }
                 if (obj.data('disable-spell'))
                     $('.rotation [data-id="' + obj.data('disable-spell') + '"]').removeClass('active');
             }
