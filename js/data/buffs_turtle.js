@@ -722,7 +722,7 @@ var buffs = [
       id: 9224,
       name: "Elixir of Demonslaying",
       iconname: "INV_Potion_27",
-      group: "elixir",
+      group: "demon",
       ap: 265,
       minlevel: 50,
       consume: true,
