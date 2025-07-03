@@ -5349,7 +5349,7 @@ var gear = {
 	    "agi": 30,
       "ac": 506,
       "crit": 1,
-      "skill": 8,
+      "skill": 6,
       "type": "2H Axe",
       "phase": 7,
       "source": "UpperKara",
