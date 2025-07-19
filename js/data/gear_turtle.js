@@ -71,6 +71,19 @@ var gear = {
       "id": 55113
     },
     {
+      "name": "Dreadslayer Horns (vs non-Demon)",
+      "source": "UpperKara",
+      "str": 33,
+	    "agi": 28,
+	    "sta": 20,
+      "hit": 1,
+      "ac": 834,
+      "phase": 7,
+      "q": 4,
+      "i": 92,
+      "id": 55114 //Need to use incorrect ID to avoid conflict with Dreadslayer Horns (vs Demons) 
+    },
+    {
       "name": "Forgotten Hide Helm",
       "source": "UpperKara",
       "str": 35,
@@ -5355,7 +5368,7 @@ var gear = {
       "source": "UpperKara",
       "q": 4,
       "i": 92,
-      "id": 55112
+      "id": 55122
     },
     {
       "name": "Ethereal Leggings",

@@ -1260,7 +1260,7 @@ var sets = [
    {
       id: 999,
       name: 'Dreadslayer\'s Rampage',
-      items: [55113,55108],
+      items: [55113,55114,55108], //55114 is demonsslayer helm #2 false id to avoid conflict
       bonus: [
          { count: 2, stats: { arp: 150 } }
       ]
