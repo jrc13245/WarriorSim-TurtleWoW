@@ -3329,6 +3329,18 @@ var gear = {
       "id": 61280
     },
     {
+      "name": "Barnacle Vambraces",
+      "sta": 14,
+      "str": 12,
+      "haste": 1,
+      "source": "Cla'ckora",
+      "ac": 328,
+      "phase": 7,
+      "q": 4,
+      "i": 66,
+      "id": 55500
+    },
+    {
       "name": "Dreamsteel Bracers",
       "sta": 12,
       "str": 18,
@@ -5369,6 +5381,18 @@ var gear = {
       "q": 4,
       "i": 92,
       "id": 55122
+    },
+    {
+      "name": "Iceplated Leggings", 
+      "sta": 22,
+      "agi": 21,
+      "ap": 36,
+      "source": "Cla'ckora",
+      "ac": 175,
+      "phase": 7,
+      "q": 4,
+      "i": 66,
+      "id": 55502
     },
     {
       "name": "Ethereal Leggings",
@@ -8951,6 +8975,26 @@ var gear = {
       "q": 3,
       "i": 68,
       "id": 61278
+    },
+    {
+      "name": "The Abyssal Pincer *Unknown PPM",
+      "mindmg": 87,
+      "maxdmg": 163,
+      "speed": 2.6,
+      "sta": 5,
+      "str": 4,
+      "type": "Fist",
+      "source": "Cla'ckora",
+      "phase": 7,
+      "q": 4,
+      "i": 66,
+      "id": 55494,
+      "Mainhand": true,
+      "proc": {
+        "ppm": 1,
+        "magic": true,
+        "dmg": 120
+      }
     },
     {
       "name": "Dawnstone Bludgeon",
@@ -13004,6 +13048,44 @@ var gear = {
       "q": 4,
       "i": 64,
       "type": "Polearm"
+    },
+    {
+      "name": "Zandalar Predator's Glaive", 
+      "sta": 23,
+      "hit": 2,
+      "ap": 36,
+      "mindmg": 175,
+      "maxdmg": 263,
+      "speed": 3.5,
+      "id": 55495,
+      "source": "Cla'ckora",
+      "phase": 7,
+      "q": 4,
+      "i": 66,
+      "type": "Polearm",
+      "proc": {
+        "chance": 5,
+        "spell": "ZandalariVigil"
+      }
+    },
+    {
+      "name": "Anchor of the Wavecutter *Unknown PPM", 
+      "str": 13,
+      "hit": 1,
+      "mindmg": 182,
+      "maxdmg": 269,
+      "speed": 3.6,
+      "id": 55504,
+      "source": "Cla'ckora",
+      "phase": 7,
+      "q": 4,
+      "i": 66,
+      "type": "Mace",
+      "proc": {
+        "ppm": 1,
+        "magic": true,
+        "dmg": 200
+      }
     },
     {
       "name": "Bone Fracture",

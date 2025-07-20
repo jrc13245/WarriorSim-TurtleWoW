@@ -1747,6 +1747,15 @@ class Champion extends Aura {
     }
 }
 
+class ZandalariVigil extends Aura {
+    constructor(player) {
+        super(player);
+        this.duration = 10;
+        this.stats = { agi: 75 };
+        this.name = "Zandalari Vigil";
+    }
+}
+
 class ForgottenOrder extends Aura {
     constructor(player) {
         super(player);

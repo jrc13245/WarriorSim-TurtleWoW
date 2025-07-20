@@ -1140,7 +1140,7 @@ SIM.UI = {
             }
 
             let source = (item.source || "").toLowerCase(), phase = item.phase;
-            if (item.source == 'Lethon' || item.source == 'Emeriss' || item.source == 'Kazzak' || item.source == 'Azuregos' || item.source == 'Ysondre' || item.source == 'Taerar' || item.source == 'Green Dragons' || item.source == 'Nerubian' || item.source == 'Dark Reaver' || item.source == 'Concavius' || item.source == 'Ostarius')
+            if (item.source == 'Lethon' || item.source == 'Emeriss' || item.source == 'Kazzak' || item.source == 'Azuregos' || item.source == 'Ysondre' || item.source == 'Taerar' || item.source == 'Green Dragons' || item.source == 'Nerubian' || item.source == 'Dark Reaver' || item.source == 'Concavius' || item.source == 'Ostarius' || item.source == "Cla'ckora")
                 source = 'worldboss';
 
             if (item.subsource == 'shadow' || item.subsource == 'arcane' || item.subsource == 'nature' || item.subsource == 'fire' || item.subsource == 'frost')
@@ -1302,7 +1302,7 @@ SIM.UI = {
             }
 
             let source = (item.source || "").toLowerCase(), phase = item.phase;
-            if (item.source == 'Lethon' || item.source == 'Emeriss' || item.source == 'Kazzak' || item.source == 'Azuregos' || item.source == 'Ysondre' || item.source == 'Taerar' || item.source == 'Green Dragons' || item.source == 'Nerubian' || item.source == 'Dark Reaver' || item.source == 'Concavius' || item.source == 'Ostarius')
+            if (item.source == 'Lethon' || item.source == 'Emeriss' || item.source == 'Kazzak' || item.source == 'Azuregos' || item.source == 'Ysondre' || item.source == 'Taerar' || item.source == 'Green Dragons' || item.source == 'Nerubian' || item.source == 'Dark Reaver' || item.source == 'Concavius' || item.source == 'Ostarius'  || item.source == "Cla'ckora")
                 source = 'worldboss';
 
 
