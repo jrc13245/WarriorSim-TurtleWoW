@@ -4,7 +4,7 @@ A webapp to simulate how https://turtle-wow.org DPS Warrior performs with differ
 Forked from https://github.com/GuybrushGit/WarriorSim
 
 Latest commit is up live here:
-https://zebouski.github.io/WarriorSim-TurtleWoW/
+https://jrc13245.github.io/WarriorSim-TurtleWoW/turtle.html
 
 ## Self-hosting and Contributing
 
